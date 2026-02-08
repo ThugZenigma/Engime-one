@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Secret</title>
+    <style>
+        body {
+            background: #000;
+            margin: 0;
+            padding: 0;
+            color: #888;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .photos {
+            max-width: 512px;
+            margin: 0 auto 30px;
+        }
+        .photo {
+            width: 512px;
+            height: 512px;
+            margin-bottom: 20px;
+            border: 1px solid #222;
+        }
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .instructions {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #222;
+            margin-top: 20px;
+        }
+        .instructions h3 {
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+        .instructions p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        .hint {
+            color: #555;
+            font-size: 0.9em;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        /* Responsive pour mobile */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .photos {
+                max-width: 100%;
+            }
+            .photo {
+                width: 100%;
+                height: auto;
+                max-width: 512px;
+                aspect-ratio: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div class="photo"><img src="1.png" alt="Photo 1"></div>
+            <div class="photo"><img src="2.png" alt="Photo 2"></div>
+            <div class="photo"><img src="3.png" alt="Photo 3"></div>
+            <div class="photo"><img src="4.png" alt="Photo 4"></div>
+            <div class="photo"><img src="5.png" alt="Photo 5"></div>
+        </div>
+        
+        <div class="instructions">
+            <h3>Déchiffrez le Secret</h3>
+            <p>Examinez les 5 photographies dans l'ordre.</p>
+            <p>Chaque image cache un indice.</p>
+            <p>Le code final est un mot de 5 lettres.</p>
+            <p class="hint">Envoyez votre réponse à l'organisateur pour validation.</p>
+        </div>
+    </div>
+</body>
+</html>
